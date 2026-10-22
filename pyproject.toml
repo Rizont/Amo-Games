@@ -20,7 +20,7 @@ testpaths = ["tests"]
 [tool.mypy]
 strict = true
 
-[tool.ruff]
+[tool.ruff.lint]
 select = [
     "E", # PEP8 соответсвие
     "F", # Логические ошибки
