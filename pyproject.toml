@@ -1,0 +1,29 @@
+[project]
+name = "amo-games"
+version = "0.0.1"
+requires-python = ">=3.10"
+description = "Web-приложение с набором игр"
+readme = "README.md"
+dependencies = []
+
+[project.optional-dependencies]
+dev = [
+    "pytest",
+    "pytest-cov",
+    "ruff",
+    "mypy"
+]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+
+[tool.mypy]
+strict = true
+
+[tool.ruff]
+select = [
+    "E", # PEP8 соответсвие
+    "F", # Логические ошибки
+    "I", # Порядок и группировка импортов
+    "B" # Потенциальные баги
+]
